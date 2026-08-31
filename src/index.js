@@ -1,22 +1,22 @@
+import dns from "dns";
+
+dns.setServers(["8.8.8.8", "8.8.4.4"]);
+
+// your existing code
+
+
+// require('dotenv').config()
 import mongoose from "mongoose";
-const {DB_name} = require("./contants.js");
-import connectDb from "./db";
+import { DB_NAME } from "./constants.js";
+
+import connectDb from "./db/index.js";
+
+import dotenv from "dotenv";
+
+dotenv.config({
+    path: "./.env"
+})
 connectDb();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
