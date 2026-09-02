@@ -3,9 +3,6 @@ import dns from "dns";
 dns.setServers(["8.8.8.8", "8.8.4.4"]);
 
 // your existing code
-
-
-// require('dotenv').config()
 import mongoose from "mongoose";
 import { DB_NAME } from "./constants.js";
 
