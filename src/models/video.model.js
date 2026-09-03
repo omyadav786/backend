@@ -1,8 +1,8 @@
 import mongoose from 'mongoose';
-
+import mongooseAggregatePaginate from 'mongoose-aggregate-paginate-v2';
 const videoSchema = new Schema ({
     owner:{
-        type:mongoose>Schema.types.ObjectId,
+        type:mongoose.Schema.types.ObjectId,
         ref:"User",
     },
     videoFile:{
