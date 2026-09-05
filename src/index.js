@@ -10,6 +10,8 @@ import connectDb from "./db/index.js";
 
 import dotenv from "dotenv";
 
+import app from "./app.js";
+
 dotenv.config({
     path: "./.env"
 })
@@ -26,6 +28,31 @@ connectDb()
 .catch((error) =>{
     console.log("Error from DB connection" , error);
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // const {DB_name} = require("./contants.js");
